@@ -1,0 +1,11 @@
+------- cpptestscan v.10.3.2.20170511B1261 (cpptesttrace) -------
+working_dir=C:\work\Project\C++test_v10.3\publish_test\fujisawa_ProjectA\Calculator\calc\src
+project_name=src
+arg=C:\Cygwin\bin\gcc.exe
+arg=-std=c99
+arg=-I../inc/
+arg=-o
+arg=main
+arg=main.c
+arg=validate.c
+arg=polishnotation.c
