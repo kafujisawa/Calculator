@@ -13,10 +13,11 @@ int
 main(void)
 {
     char formula[MAX_NUM] = {0};
+    int test;
 
     printf("計算式を入力してください\n");
-    fgets(formula, MAX_NUM, stdin);
-    strtok(formula, "\r\n");
+    (void) fgets(formula, MAX_NUM, stdin);
+    (void) strtok(formula, "\r\n");
 
     if (!validateInputFormula(formula))
     {
@@ -29,11 +30,11 @@ main(void)
     double calcResult = calcPolishNotation(array);
     if (!validateCalcResult(calcResult))
     {
-        printf("%s", calcResultErrorMess);
+        (void) printf("%s", calcResultErrorMess);
         return 0;
     }
 
-    printf("計算結果は%.0fです", calcResult);
+    (void) printf("計算結果は%.0fです", calcResult);
 
 
     return 0;
