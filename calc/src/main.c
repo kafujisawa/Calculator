@@ -15,13 +15,13 @@ main(void)
     char formula[MAX_NUM] = {0};
     int test;
 
-    printf("計算式を入力してください\n");
+    (void) printf("計算式を入力してください\n");
     (void) fgets(formula, MAX_NUM, stdin);
     (void) strtok(formula, "\r\n");
 
     if (!validateInputFormula(formula))
     {
-        printf("%s", inputErrorMess);
+        (void) printf("%s", inputErrorMess);
         return 0;
     }
 
